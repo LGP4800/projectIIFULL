@@ -40,57 +40,60 @@ namespace Led
             this.lblDenStatus = new System.Windows.Forms.Label();
             this.labelTemp = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Gold;
-            this.button3.Location = new System.Drawing.Point(383, 252);
+            this.button3.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button3.Location = new System.Drawing.Point(580, 75);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(105, 30);
+            this.button3.Size = new System.Drawing.Size(230, 91);
             this.button3.TabIndex = 2;
-            this.button3.Text = "SetPlus";
+            this.button3.Text = "+";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Gold;
-            this.button1.Location = new System.Drawing.Point(272, 252);
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.Location = new System.Drawing.Point(580, 193);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(105, 30);
+            this.button1.Size = new System.Drawing.Size(230, 91);
             this.button1.TabIndex = 5;
-            this.button1.Text = "SetMinus";
+            this.button1.Text = "-";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // labelSetPoint
             // 
-            this.labelSetPoint.AutoSize = true;
-            this.labelSetPoint.Font = new System.Drawing.Font("Times New Roman", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.labelSetPoint.Location = new System.Drawing.Point(338, 201);
+            this.labelSetPoint.Font = new System.Drawing.Font("Times New Roman", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.labelSetPoint.Location = new System.Drawing.Point(365, 226);
             this.labelSetPoint.Name = "labelSetPoint";
-            this.labelSetPoint.Size = new System.Drawing.Size(89, 33);
+            this.labelSetPoint.Size = new System.Drawing.Size(116, 42);
             this.labelSetPoint.TabIndex = 9;
-            this.labelSetPoint.Text = "label2";
+            this.labelSetPoint.Text = "SP";
             // 
             // labelStatus
             // 
             this.labelStatus.AutoSize = true;
             this.labelStatus.Font = new System.Drawing.Font("Times New Roman", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.labelStatus.Location = new System.Drawing.Point(338, 353);
+            this.labelStatus.Location = new System.Drawing.Point(117, 301);
             this.labelStatus.Name = "labelStatus";
             this.labelStatus.Size = new System.Drawing.Size(89, 33);
             this.labelStatus.TabIndex = 10;
-            this.labelStatus.Text = "label2";
+            this.labelStatus.Text = "Status";
             // 
             // lblDenTemp
             // 
             this.lblDenTemp.AutoSize = true;
-            this.lblDenTemp.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblDenTemp.Location = new System.Drawing.Point(12, 64);
+            this.lblDenTemp.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblDenTemp.Location = new System.Drawing.Point(25, 147);
             this.lblDenTemp.Name = "lblDenTemp";
-            this.lblDenTemp.Size = new System.Drawing.Size(181, 31);
+            this.lblDenTemp.Size = new System.Drawing.Size(104, 19);
             this.lblDenTemp.TabIndex = 11;
             this.lblDenTemp.Text = "Temperature :";
             this.lblDenTemp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -98,49 +101,69 @@ namespace Led
             // lblDenSetP
             // 
             this.lblDenSetP.AutoSize = true;
-            this.lblDenSetP.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblDenSetP.Location = new System.Drawing.Point(12, 201);
+            this.lblDenSetP.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblDenSetP.Location = new System.Drawing.Point(238, 238);
             this.lblDenSetP.Name = "lblDenSetP";
-            this.lblDenSetP.Size = new System.Drawing.Size(213, 31);
+            this.lblDenSetP.Size = new System.Drawing.Size(121, 19);
             this.lblDenSetP.TabIndex = 12;
             this.lblDenSetP.Text = "Actual SetPoint :";
             // 
             // lblDenStatus
             // 
             this.lblDenStatus.AutoSize = true;
-            this.lblDenStatus.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblDenStatus.Location = new System.Drawing.Point(12, 355);
+            this.lblDenStatus.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblDenStatus.Location = new System.Drawing.Point(12, 282);
             this.lblDenStatus.Name = "lblDenStatus";
-            this.lblDenStatus.Size = new System.Drawing.Size(187, 31);
+            this.lblDenStatus.Size = new System.Drawing.Size(107, 19);
             this.lblDenStatus.TabIndex = 13;
             this.lblDenStatus.Text = "Actual Status :";
             // 
             // labelTemp
             // 
-            this.labelTemp.AutoSize = true;
-            this.labelTemp.Font = new System.Drawing.Font("Times New Roman", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.labelTemp.Location = new System.Drawing.Point(338, 73);
+            this.labelTemp.Font = new System.Drawing.Font("Times New Roman", 72F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.labelTemp.Location = new System.Drawing.Point(135, 75);
             this.labelTemp.Name = "labelTemp";
-            this.labelTemp.Size = new System.Drawing.Size(89, 33);
+            this.labelTemp.Size = new System.Drawing.Size(299, 106);
             this.labelTemp.TabIndex = 14;
-            this.labelTemp.Text = "label2";
+            this.labelTemp.Text = "Temp";
             // 
             // btnClose
             // 
+            this.btnClose.BackColor = System.Drawing.Color.Gold;
             this.btnClose.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnClose.Location = new System.Drawing.Point(494, 462);
+            this.btnClose.Location = new System.Drawing.Point(721, 459);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(82, 23);
+            this.btnClose.Size = new System.Drawing.Size(82, 33);
             this.btnClose.TabIndex = 15;
             this.btnClose.Text = "Exit";
-            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // progressBar
+            // 
+            this.progressBar.Location = new System.Drawing.Point(74, 337);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Size = new System.Drawing.Size(172, 23);
+            this.progressBar.TabIndex = 16;
+            this.progressBar.Value = 10;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(669, 517);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(143, 23);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "LAPS Technologies\r\n";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(588, 497);
+            this.BackColor = System.Drawing.Color.SkyBlue;
+            this.ClientSize = new System.Drawing.Size(815, 544);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.progressBar);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.labelTemp);
             this.Controls.Add(this.lblDenStatus);
@@ -170,6 +193,8 @@ namespace Led
         private System.Windows.Forms.Label lblDenStatus;
         private System.Windows.Forms.Label labelTemp;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.ProgressBar progressBar;
+        private System.Windows.Forms.Label label1;
     }
 }
 

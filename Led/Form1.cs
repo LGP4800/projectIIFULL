@@ -56,6 +56,7 @@ namespace Led
                 byte status = (byte)port.ReadByte();
                 byte crc = (byte)port.ReadByte();
                 int a = Convert.ToInt32(temp);
+                int b = Convert.ToInt32(status);
 
                 if ((byte)port.ReadByte() == 0xFF)
                 {
@@ -85,7 +86,18 @@ namespace Led
                 }));
                 this.Invoke(new MethodInvoker(delegate ()
                 {
-                          labelStatus.Text = " " + status;
+                    progressBar.Step = 10;
+                    if (b == 10)
+                    {
+                        labelStatus.Text = "OFF";
+                        progressBar.Value = 11;
+                    } 
+                    else if(b == 11)
+                    {
+                        labelStatus.Text = "ON";
+                        for ( int i = 0; i < 101; i++)
+                            progressBar.PerformStep();
+                    }
                 }));// nu pot modifica formul din al thread decat cel care l-a creat. pentru asta se foloseste begin invoke 
                 SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\DB\AppDB.mdf;Integrated Security=True;Connect Timeout=30"); //schimba location cu path-ul bazei tale de date create. LoginTable e tabel cu id, username, password
                 string now = DateTime.Now.ToString("F", CultureInfo.CreateSpecificCulture("en-US"));
