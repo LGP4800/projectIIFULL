@@ -20,7 +20,7 @@ namespace Led
             }
             base.Dispose(disposing);
         }
-
+        
         #region Windows Form Designer generated code
 
         /// <summary>
@@ -71,7 +71,7 @@ namespace Led
             // labelSetPoint
             // 
             this.labelSetPoint.Font = new System.Drawing.Font("Times New Roman", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.labelSetPoint.Location = new System.Drawing.Point(365, 226);
+            this.labelSetPoint.Location = new System.Drawing.Point(452, 253);
             this.labelSetPoint.Name = "labelSetPoint";
             this.labelSetPoint.Size = new System.Drawing.Size(116, 42);
             this.labelSetPoint.TabIndex = 9;
@@ -81,7 +81,7 @@ namespace Led
             // 
             this.labelStatus.AutoSize = true;
             this.labelStatus.Font = new System.Drawing.Font("Times New Roman", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.labelStatus.Location = new System.Drawing.Point(117, 301);
+            this.labelStatus.Location = new System.Drawing.Point(205, 328);
             this.labelStatus.Name = "labelStatus";
             this.labelStatus.Size = new System.Drawing.Size(89, 33);
             this.labelStatus.TabIndex = 10;
@@ -91,18 +91,19 @@ namespace Led
             // 
             this.lblDenTemp.AutoSize = true;
             this.lblDenTemp.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblDenTemp.Location = new System.Drawing.Point(25, 147);
+            this.lblDenTemp.Location = new System.Drawing.Point(132, 174);
             this.lblDenTemp.Name = "lblDenTemp";
             this.lblDenTemp.Size = new System.Drawing.Size(104, 19);
             this.lblDenTemp.TabIndex = 11;
             this.lblDenTemp.Text = "Temperature :";
             this.lblDenTemp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+
             // 
             // lblDenSetP
             // 
             this.lblDenSetP.AutoSize = true;
             this.lblDenSetP.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblDenSetP.Location = new System.Drawing.Point(238, 238);
+            this.lblDenSetP.Location = new System.Drawing.Point(326, 265);
             this.lblDenSetP.Name = "lblDenSetP";
             this.lblDenSetP.Size = new System.Drawing.Size(121, 19);
             this.lblDenSetP.TabIndex = 12;
@@ -112,7 +113,7 @@ namespace Led
             // 
             this.lblDenStatus.AutoSize = true;
             this.lblDenStatus.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblDenStatus.Location = new System.Drawing.Point(12, 282);
+            this.lblDenStatus.Location = new System.Drawing.Point(100, 309);
             this.lblDenStatus.Name = "lblDenStatus";
             this.lblDenStatus.Size = new System.Drawing.Size(107, 19);
             this.lblDenStatus.TabIndex = 13;
@@ -121,7 +122,7 @@ namespace Led
             // labelTemp
             // 
             this.labelTemp.Font = new System.Drawing.Font("Times New Roman", 72F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.labelTemp.Location = new System.Drawing.Point(135, 75);
+            this.labelTemp.Location = new System.Drawing.Point(242, 102);
             this.labelTemp.Name = "labelTemp";
             this.labelTemp.Size = new System.Drawing.Size(299, 106);
             this.labelTemp.TabIndex = 14;
@@ -141,7 +142,7 @@ namespace Led
             // 
             // progressBar
             // 
-            this.progressBar.Location = new System.Drawing.Point(74, 337);
+            this.progressBar.Location = new System.Drawing.Point(162, 364);
             this.progressBar.Name = "progressBar";
             this.progressBar.Size = new System.Drawing.Size(172, 23);
             this.progressBar.TabIndex = 16;
