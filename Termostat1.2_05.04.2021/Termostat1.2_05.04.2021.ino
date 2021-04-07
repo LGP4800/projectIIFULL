@@ -4,7 +4,7 @@
 #define ledPin 6
 SFE_BMP180 tmp;
 typedef unsigned char U8;
-U8 setPoint = 26;
+U8 setPoint = 22;
 U8 a[6];
 U8 b[6];
 U8 i;
