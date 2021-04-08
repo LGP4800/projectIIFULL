@@ -86,18 +86,7 @@ namespace Led
                  }));
                 this.Invoke(new MethodInvoker(delegate ()
                 {  
-                    if(btn1Clicked == true)
-                    {
-
-                        command[0] = 4;
-                        PortWrite(command);
-                    } 
-                    if(btn3Clicked == true)
-                    {
-
-                        command[0] = 3;
-                        PortWrite(command);
-                    }
+                    
                     labelSetPoint.Text = " " + setPoint;
                 }));
                 this.Invoke(new MethodInvoker(delegate ()
@@ -121,7 +110,9 @@ namespace Led
                 SqlDataAdapter sda = new SqlDataAdapter(comm);
                 DataTable dtbl = new DataTable();
                 sda.Fill(dtbl);
-                Thread.Sleep(500);
+                conn.Close();
+                Thread.Sleep(500); 
+                
             }
         }
 
@@ -131,16 +122,16 @@ namespace Led
         private void button3_Click(object sender, EventArgs e)//SetPlus
         {
             btn3Clicked = true;
-            //command[0] = 3;
-            //PortWrite(command);
+            command[0] = 3;
+            PortWrite(command);
             //setPoint++;
             //SetLabel(setPoint.ToString());
         }
         private void button1_Click(object sender, EventArgs e)//SetMinus
         {
             btn1Clicked = true;
-            //command[0] = 4;
-            //PortWrite(command);
+            command[0] = 4;
+            PortWrite(command);
             //setPoint--;
             //SetLabel(setPoint.ToString());
         }
